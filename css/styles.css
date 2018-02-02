@@ -1,4 +1,4 @@
-﻿/* Basic Styling */
+/* Basic Styling */
 body {
     background-color: #fff;
     line-height: 24px;
@@ -14,16 +14,16 @@ p {
 
 a {
     -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+       -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+         -o-transition: all 0.3s ease-out 0s;
+            transition: all 0.3s ease-out 0s;
 }
 
-    a, a:hover, a:focus, .btn:focus {
-        text-decoration: none;
-        outline: none;
-    }
+a, a:hover, a:focus, .btn:focus {
+    text-decoration: none;
+    outline: none;
+}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -59,13 +59,25 @@ main > section {
     padding: 70px 0;
 }
 
+/* Alert*/
+.alert {
+    border-radius: 150px;
+    display: none;
+    font-size: 18px;
+    background-color: #f44336;
+    color: white;
+    margin: 0 auto;
+    width: 550px;
+}
+
 /* Header */
 #navigation {
     -webkit-transition: all 0.8s ease 0s;
-    -moz-transition: all 0.8s ease 0s;
-    -ms-transition: all 0.8s ease 0s;
-    -o-transition: all 0.8s ease 0s;
-    transition: all 0.8s ease 0s;
+       -moz-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+         -o-transition: all 0.8s ease 0s;
+            transition: all 0.8s ease 0s;
+
     background-color: rgba(0,23,31,.8);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     padding: 5px 0;
@@ -78,14 +90,14 @@ main > section {
     text-transform: uppercase;
 }
 
-    .navbar-inverse .navbar-nav > li > a:hover {
-        color: #00A8E8 !important;
-        font-size: 15px;
-        font-weight: 700;
-        text-transform: uppercase;
-        transform: scale(1.1);
-        cursor: pointer;
-    }
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #00A8E8 !important;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 /* Title of Project Style */
 h1.projectTitle {
@@ -108,11 +120,11 @@ h1.projectTitle {
     color: #00171F;
 }
 
-    /* Text in button when mouse over it*/
-    .button:hover, .button:focus, .button:active {
-        background: #003459;
-        color: #FFF;
-    }
+/* Text in button when mouse over it*/
+.button:hover, .button:focus, .button:active{
+    background: #003459;
+    color: #FFF;
+}
 
 /* Ttitle Section h2 */
 .sec-title h2 {
@@ -138,7 +150,7 @@ h1.projectTitle {
     padding-bottom: 50px;
 }
 
-/* Modal */
+/* Modal */ 
 .modal-dialog {
     font-family: Helvetica, sans-serif;
     width: 100%;
@@ -148,17 +160,17 @@ h1.projectTitle {
     left: 0;
 }
 
-    .modal-dialog > div {
-        width: 100%;
-        position: relative;
-        margin: 10% auto;
-        padding: 5px 20px 13px 20px;
-        border-radius: 10px;
-        background: #fff;
-        background: -moz-linear-gradient(#fff, #007EA7);
-        background: -webkit-linear-gradient(#fff, #007EA7);
-        background: -o-linear-gradient(#fff, #007EA7);
-    }
+.modal-dialog > div {
+    width: 100%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #007EA7);
+    background: -webkit-linear-gradient(#fff, #007EA7);
+    background: -o-linear-gradient(#fff, #007EA7);
+}
 
 #sizePicker {
     align-content: center;
@@ -186,12 +198,12 @@ h1.projectTitle {
     box-shadow: 1px 1px 3px #000;
 }
 
-    .close:hover {
-        background: #00d9ff;
-    }
+.close:hover { 
+    background: #00d9ff; 
+}
 
 .sizeConfig {
-    padding-bottom: 25px;
+    padding-bottom: 25px;  
     display: inline;
     position: relative;
 }
@@ -218,14 +230,15 @@ h1.projectTitle {
     border: 1px solid #f1f1f1;
 }
 
-    .foto-icon:hover {
-        transform: scale(1.5);
-        -webkit-transition: all 0.3s ease 0s;
-        -moz-transition: all 0.3s ease 0s;
+.foto-icon:hover {
+    transform: scale(1.5);
+
+    -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
         -ms-transition: all 0.3s ease 0s;
-        -o-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-    }
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
 
 .icon {
     border: 3px solid transparent;
@@ -233,21 +246,23 @@ h1.projectTitle {
     height: 85px;
     width: 85px;
     line-height: 101px;
+
     -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -ms-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
 }
 
-    .icon:hover {
-        transform: scale(1.5);
-        -webkit-transition: all 0.3s ease 0s;
-        -moz-transition: all 0.3s ease 0s;
+.icon:hover {
+    transform: scale(1.5);
+
+    -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
         -ms-transition: all 0.3s ease 0s;
-        -o-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-    }
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
 
 .about-item h3 {
     font-size: 20px;

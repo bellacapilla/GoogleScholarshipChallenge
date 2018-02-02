@@ -6,11 +6,11 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-
+    
     <!-- CSS Style -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Bootstrap -->
+    
+    <!-- Bootstrap -->    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -47,91 +47,99 @@
     <main class="site-content" role="main">
 
 
-        <!-- Modal Config Content -->
-        <!-- Configuration of size and color -->
-        <div id="openModalConfig" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" data-dismiss="modal" class="close">X</button>
-
-                        <div class="sec-title text-center">
-                            <h2>Choose Grid Size</h2>
-                            <p>Please, set the height and width of your canvas.</p>
-                        </div>
-
-                    </div>
-
-                    <div class="modal-body">
-
-                        <div class="sizeConfig text-center">
-                            <form id="sizePicker">
-
-                                <div class="input-field">
-                                    <input type="number" id="inputHeight" name="height" min="1" max="100" placeholder="Rows">
-                                </div>
-
-                                <div class="input-field">
-                                    <input type="number" id="inputWeight" name="width" min="1" max="100" placeholder="Columns">
-                                </div>
-
-                                <button id="sizeButton" class="button" data-dismiss="modal" type="submit">Submit</button>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal Config Content -->
-        <!-- Modal Reset Content -->
-        <div id="openModalReset" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" data-dismiss="modal" class="close">X</button>
-
-                        <div class="sec-title text-center">
-                            <h2>Reset Canvas</h2>
-                            <p>Are you sure you want to clean your canvas?</p>
-                        </div>
-
-                    </div>
-
-                    <div class="modal-body">
-                        <div class="choiceBut text-center">
-                            <button class="button" id="resetGrid" data-dismiss="modal" type="submit">Yes, I don't like my own art.</button>
-                            <button class="button" data-dismiss="modal">No, staap! Don't!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal Reset Content -->
-        <!-- Canvas -->
-        <section id="canvas">
-            <div class="container">
-                <div closs="row">
+    <!-- Modal Config Content -->
+    <!-- Configuration of size and color -->
+    <div id="openModalConfig" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" data-dismiss="modal" class="close">X</button>
 
                     <div class="sec-title text-center">
-                        <h2>Design Your Canvas</h2>
-                        <p>
-                            Welcome! Are you ready to do some art? Click on 'Create New' button above to define how big your canvas should be. Afterwards, just select your favorite color and start coloring these pixels! ;)
-                            Improvements to come.
-                        </p>
+                        <h2>Choose Grid Size</h2>
+                        <p>Please, set the height and width of your canvas.</p>
                     </div>
+                </div>
 
-                    <div id="color" class="sec-title text-center">
-                        <h2>Pick a Color</h2>
-                        <input type="color" id="colorPicker">
+                <div class="modal-body">
+
+                    <div class="sizeConfig text-center">
+                        <form id="sizePicker">
+                            
+                            <div class="input-field">
+                                <input type="number" id="inputHeight" name="height" min="1" max="100" placeholder="Rows">
+                            </div>
+                            
+                            <div class="input-field">
+                                <input type="number" id="inputWeight" name="width" min="1" max="100" placeholder="Columns">
+                            </div>
+
+                            <button id="sizeButton" class="button" data-dismiss="modal" type="submit">Submit</button>
+                            
+                        </form>
                     </div>
-
-                    <table id="pixelCanvas"></table>
-
                 </div>
             </div>
-        </section>
-        <!-- End of Canvas -->
+        </div>
+    </div>
+    <!-- End Modal Config Content -->
+
+    <!-- Modal Reset Content -->
+    <div id="openModalReset" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" data-dismiss="modal" class="close">X</button>
+
+                    <div class="sec-title text-center">
+                        <h2>Reset Canvas</h2>
+                        <p>Are you sure you want to clean your canvas?</p>
+                    </div>
+
+                </div>
+
+                <div class="modal-body">
+                    <div class="choiceBut text-center">
+                        <button class="button" id="resetGrid" data-dismiss="modal" type="submit">Yes, I don't like my own art.</button>
+                        <button class="button" data-dismiss="modal">No, staap! Don't!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Reset Content -->
+
+    <!-- Canvas -->
+    <section id="canvas">
+        <div class="container">
+            <div closs="row">
+
+                <div class="sec-title text-center">
+                    <h2>Design Your Canvas</h2>
+                    <p>Welcome! Are you ready to do some art? Click on 'Create New' button above to define how big your canvas should be. Afterwards, just select your favorite color and start coloring these pixels! ;)<br>You can erase a cell with a righ-click of your mouse! Have fun!<br>
+                    Improvements to come.</p>
+                </div>
+
+                <div class="alert">
+                    <p>I'm sorry. This input value is not valid. Please try again.<br>Only values between 1 and 100 will be accepted.</p>
+                </div>
+
+                <div id="color" class="sec-title text-center">
+                    <h2>Your canvas</h2>
+                    <h3>Pick a Color</h3>
+                    <input type="color" id="colorPicker">
+                </div>
+
+                <table id="pixelCanvas">
+                    
+
+                </table>
+        
+            </div>
+        </div>
+    </section>
+    <!-- End of Canvas -->
+
         <!-- About Section -->
         <section id="about">
             <div id="container">
@@ -144,7 +152,7 @@
                                 <i class="fab fa-google fa-3x"></i>
                             </div>
                             <h3>This Project</h3>
-                            <p>This project was developed for the "Google Developer Challenge Scholarship". </p>
+                            <p>This project was developed for the "Google Developer Challenge Scholarship".</p>
                         </div>
                     </div>
 
@@ -155,7 +163,7 @@
                                 <i class="fas fa-cogs fa-3x"></i>
                             </div>
                             <h3>Stuff used</h3>
-                            <p>To develop this project I used HTML, CSS, JavaScript and jQuery functionalities. All these amazing languages and tools are working together to give life to this page! :D Isn't this pretty?</p>
+                            <p>To develop this project I used HTML / Bootstrap, FontAwesome, CSS, JavaScript and jQuery functionalities. All these amazing languages and tools are working together to give life to this page! :D Isn't this pretty?</p>
                         </div>
                     </div>
 
@@ -173,8 +181,8 @@
                     <!-- Fourth Item -->
                     <div class="col-md-3 col-sm-6 col-xs-12 text-center">
                         <div class="about-item">
-                            <div class="foto-icon">
-                                <img class="img-circle img-responsive" src="img/mesmall.jpg" alt="">
+                            <div class="icon">
+                                <i class="far fa-heart fa-3x"></i>
                             </div>
                             <h3>About Me</h3>
                             <p>My name is Isabella Navarro, I'm from Brazil, but I live in Germany. I studied Biology, but I'm also a technology lover. Working hard to be the best Bioinformatician ever! :)</p>
@@ -188,8 +196,7 @@
 
 
     <script src="js/designs.js"></script>
-
+    
 
 </body>
 </html>
-

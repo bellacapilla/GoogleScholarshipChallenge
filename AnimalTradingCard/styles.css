@@ -1,0 +1,87 @@
+body {
+	margin: 10px 15px;
+	border-width: 2px;
+	box-shadow: 2px 2px 20px #f2f2f2;
+	width: 400px;
+	margin: 0 auto;
+}
+
+img {
+	width: 350px;
+	height: 240px;
+	align-content: center;
+	display: block;
+	margin: auto;
+	border-radius: 34px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto;
+	font-family: 'Noto Serif', serif;
+	text-align: center;
+}
+
+h3 {
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto;
+	font-family: 'Noto Serif', serif;
+	text-align: center;
+}
+
+span {
+	font-weight: 800;
+}
+
+ul {
+	list-style-type: none;
+	font-size: 14px;
+}
+
+#card {
+	width: 100%;
+	border: 1px solid #e6e6e6;
+	box-shadow: 5px 7px #e6e6e6;
+	align-content: center;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+	padding-bottom: 20px;
+	margin-top: 50px;
+	background-color: #CBDFBD;
+}
+
+.animal {
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+#info {
+	display: block;
+	align-self: center;
+	width: 350px;
+	border: 1px #F6F4D2;
+	border-radius: 10px;
+	border-style: groove;
+	margin: 0 auto;
+}
+
+#info .interesting {
+	font-style: italic;
+	font-size: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	font-weight: 600;
+}
+
+#info .description {
+	font-size: 15px;
+	padding-left: 10px;
+	text-align: justify;
+	padding-right: 10px;
+	font-weight: 600;
+}

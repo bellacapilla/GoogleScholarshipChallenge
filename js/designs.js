@@ -50,49 +50,28 @@ $(document).ready(function() {
 		$(this).attr('bgcolor', '#fff');
 	});
 
-	// Left click functionalities
-	// Function Listener for holding down mouse left button
-	let holdLeft = false;
-	$('td').mousedown(function(event) {
+	// Dragging functionalities
+	// Function Listener for holding down mouse button
+	table.mousedown(function(event) {
+		// Verifies if left button is pressed
 		if (event.which === 1) {
-			holdLeft = true;
-		}
-	});
+			// Paints cells
+			$('td').mousemove(function(event) {
+				const color = $("#colorPicker").val();
+				$(this).attr('bgcolor', color);
 
-	$('td').mouseup(function(event) {
-		if (event.which === 1) {
-			holdLeft = false;
-		}
-	});
+			// Verifies if right button is pressed
+			})} else if (event.which === 3) {
+					// Clean up cells
+					$('td').mousemove(function(event) {
+					$(this).attr('bgcolor', '#fff');
+				})
+			}
+		});
 
-	// Dragging mouse for painting
-	$('td').mouseover(function() {
-		if (holdLeft) {
-			const color = $("#colorPicker").val();
-			$(this).attr('bgcolor', color);
-		}
-	});
-
-	// Right mouse click functionalities
-	// Function Listener for holding down mouse right button
-	let holdRight = false;
-	$('td').mousedown(function(event) {
-		if (event.which === 3) {
-			holdRight = true;
-		}
-	});
-
-	$('td').mouseup(function(event) {
-		if (event.which === 3) {
-			holdRight = false;
-		}
-	});
-
-	// Dragging mouse for cleaning
-	$('td').mouseover(function() {
-		if (holdRight) {
-			$(this).attr('bgcolor', '#fff');
-		}
+	// Unibind 'mousemove' listener
+	table.mouseup(function(event) {
+		$('td').unbind('mousemove');
 	});
 
 	// Canvas is made if 'Submit' button is clicked
